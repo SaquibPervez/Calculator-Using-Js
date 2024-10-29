@@ -10,6 +10,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+<script>
+    
+function inputValue(value) {
+var input = document.getElementById("input");
+input.value += value;
+}
+      
+function result() {
+var input = document.getElementById("input");
+var ans = eval(input.value);
+input.value = ans;
+}
+      
+function allClear() {
+var input = document.getElementById("input");
+input.value = "";
+}
+      
+ function removeValue(){
+var input = document.getElementById("input");
+input.value = input.value.slice(0,-1)
+}
+
+</script>
 <body>
     <div class="container">
     <input type="text" placeholder="Enter Any Number" id="input">
